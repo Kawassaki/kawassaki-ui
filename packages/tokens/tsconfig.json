@@ -1,0 +1,4 @@
+{
+  "extends": "@kawassaki-ui/ts-config/base.json",
+  "include": ["src"],
+}
