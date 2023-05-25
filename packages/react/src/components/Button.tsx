@@ -9,7 +9,7 @@ export const Button = styled('button', {
   fontFamily: '$default',
   textAlign: 'center',
   minWidth: 120,
-  boxShadow: 'border-box',
+  boxSizing: 'border-box',
   padding: '0 $4',
 
   display: 'flex',
@@ -23,30 +23,36 @@ export const Button = styled('button', {
     width: '$4',
     height: '$4',
   },
+
   '&:disabled': {
     cursor: 'not-allowed',
+  },
+
+  '&:focus': {
+    boxShadow: '0 0 0 2px $colors$gray100',
   },
 
   variants: {
     variant: {
       primary: {
         color: '$white',
-        backgroundColor: '$ignite500',
+        background: '$ignite500',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$ignite300',
+          background: '$ignite300',
         },
 
         '&:disabled': {
           backgroundColor: '$gray200',
         },
       },
+
       secondary: {
         color: '$ignite300',
         border: '2px solid $ignite500',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$ignite500',
+          background: '$ignite500',
           color: '$white',
         },
 
@@ -55,8 +61,9 @@ export const Button = styled('button', {
           borderColor: '$gray200',
         },
       },
+
       tertiary: {
-        color: '$gray200',
+        color: '$gray100',
 
         '&:not(:disabled):hover': {
           color: '$white',
@@ -64,19 +71,21 @@ export const Button = styled('button', {
 
         '&:disabled': {
           color: '$gray600',
-          borderColor: '$gray200',
         },
       },
     },
+
     size: {
       sm: {
         height: 38,
       },
+
       md: {
         height: 46,
       },
     },
   },
+
   defaultVariants: {
     variant: 'primary',
     size: 'md',

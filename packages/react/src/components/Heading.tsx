@@ -4,7 +4,7 @@ import { styled } from '../styles'
 export const Heading = styled('h2', {
   fontFamily: '$default',
   lineHeight: '$shorter',
-  marginTop: 0,
+  margin: 0,
   color: '$gray100',
 
   variants: {
