@@ -20,7 +20,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
     backgroundColor: '$ignite300',
   },
 
-  '&:focus': {
+  '&:focus, &[data-state="checked"]': {
     border: '2px solid $ignite300',
   },
 })
@@ -49,10 +49,10 @@ export const CheckboxIndicator = styled(Checkbox.Indicator, {
   height: '$4',
 
   '&[data-state="checked"]': {
-    animation: `${slideIn} 100ms ease-out`,
+    animation: `${slideIn} 200ms ease-out`,
   },
 
   '&[data-state="unchecked"]': {
-    animation: `${slideOut} 100ms ease-out`,
+    animation: `${slideOut} 200ms ease-out`,
   },
 })

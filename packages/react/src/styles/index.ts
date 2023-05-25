@@ -1,12 +1,13 @@
 import {
   colors,
+  fonts,
   fontSizes,
   fontWeights,
-  fonts,
   lineHeights,
   radii,
   space,
 } from '@kawassaki-ui/tokens'
+
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const {
@@ -21,9 +22,10 @@ export const {
 } = createStitches({
   themeMap: {
     ...defaultThemeMap,
-    width: 'space',
     height: 'space',
+    width: 'space',
   },
+
   theme: {
     colors,
     fontSizes,

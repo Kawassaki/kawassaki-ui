@@ -1,4 +1,4 @@
 {
   "extends": "@kawassaki-ui/ts-config/react.json",
-  "include": ["src"],
+  "include": ["src"]
 }

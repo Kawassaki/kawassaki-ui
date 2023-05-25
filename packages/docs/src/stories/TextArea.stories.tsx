@@ -10,9 +10,9 @@ export default {
       return (
         <Box
           as="label"
-          css={{ display: 'flex', flexDirection: 'column', gap: '$1' }}
+          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
         >
-          <Text size="sm">Description</Text>
+          <Text size="sm">Observations</Text>
           {Story()}
         </Box>
       )
@@ -22,7 +22,7 @@ export default {
 
 export const Primary: StoryObj<TextAreaProps> = {
   args: {
-    placeholder: 'Type your description',
+    placeholder: 'Add any observations...',
   },
 }
 

@@ -6,10 +6,11 @@ export default {
   component: Heading,
   args: {
     children: 'Custom title',
+    size: 'md',
   },
   argTypes: {
     size: {
-      options: ['xl', '2xl', '4xl', '5xl', '6xl', '7xl', '8xl', '9xl'],
+      options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],
       control: {
         type: 'inline-radio',
       },
@@ -28,7 +29,7 @@ export const CustomTag: StoryObj<HeadingProps> = {
     docs: {
       description: {
         story:
-          'By default heading will always be `h2`, although you can change it by passing an `as` props',
+          'Por padrão o heading sempre será um `h2`, mas podemos alterar isso com a propriedade `as`.',
       },
     },
   },

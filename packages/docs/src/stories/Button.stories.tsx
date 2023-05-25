@@ -40,10 +40,10 @@ export const Primary: StoryObj<ButtonProps> = {}
 export const Secondary: StoryObj<ButtonProps> = {
   args: {
     variant: 'secondary',
-    size: 'md',
-    children: 'Create New',
+    children: 'Create new',
   },
 }
+
 export const Tertiary: StoryObj<ButtonProps> = {
   args: {
     variant: 'tertiary',
@@ -53,9 +53,7 @@ export const Tertiary: StoryObj<ButtonProps> = {
 
 export const Small: StoryObj<ButtonProps> = {
   args: {
-    variant: 'primary',
     size: 'sm',
-    children: 'Small Button',
   },
 }
 
@@ -63,13 +61,14 @@ export const WithIcon: StoryObj<ButtonProps> = {
   args: {
     children: (
       <>
-        Next Step <ArrowRight weight="bold" />
+        Próximo passo
+        <ArrowRight weight="bold" />
       </>
     ),
   },
 }
 
-export const Disabeld: StoryObj<ButtonProps> = {
+export const Disabled: StoryObj<ButtonProps> = {
   args: {
     disabled: true,
   },

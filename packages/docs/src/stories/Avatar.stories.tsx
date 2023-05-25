@@ -2,11 +2,11 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Avatar, AvatarProps } from '@kawassaki-ui/react'
 
 export default {
-  title: 'Data Display/Avatar',
+  title: 'Data display/Avatar',
   component: Avatar,
   args: {
-    src: 'https://github.com/kawassaki.png',
-    alt: 'Felipe Kawassaki',
+    src: 'https://github.com/diego3g.png',
+    alt: 'Diego Fernandes',
   },
   argTypes: {
     src: {

@@ -7,7 +7,7 @@ export const Label = styled(Text, {
   color: '$gray200',
 
   defaultVariants: {
-    size: '$xs',
+    size: 'xs',
   },
 })
 
