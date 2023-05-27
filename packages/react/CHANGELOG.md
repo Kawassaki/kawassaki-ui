@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 3.1.1
+
+### Patch Changes
+
+- Test
+
 ## 3.1.0
 
 ### Minor Changes

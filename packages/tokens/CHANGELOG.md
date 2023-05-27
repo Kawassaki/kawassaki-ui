@@ -1,5 +1,11 @@
 # @kawassaki-ui/tokens
 
+## 2.2.1
+
+### Patch Changes
+
+- Test
+
 ## 2.2.0
 
 ### Minor Changes

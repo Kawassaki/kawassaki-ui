@@ -1,5 +1,11 @@
 # @kawassaki-ui/eslint-config
 
+## 2.1.1
+
+### Patch Changes
+
+- Test
+
 ## 2.1.0
 
 ### Minor Changes
