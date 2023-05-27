@@ -1,6 +1,5 @@
 {
   "name": "@kawassaki-ui/ts-config",
-  "version": "1.0.0",
-  "license": "MIT",
-  "private": true
+  "version": "2.1.0",
+  "license": "MIT"
 }

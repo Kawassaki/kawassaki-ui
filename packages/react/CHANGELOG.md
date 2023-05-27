@@ -1,5 +1,25 @@
 # @kawassaki-ui/react
 
+## 3.1.0
+
+### Minor Changes
+
+- Test
+
+## 3.0.1
+
+### Patch Changes
+
+- Update package json
+
+## 3.0.0
+
+### Major Changes
+
+- Add changest confi
+
+  - oi oi :D
+
 ## 2.2.2
 
 ### Patch Changes

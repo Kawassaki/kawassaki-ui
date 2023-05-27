@@ -1,4 +1,4 @@
-# @kawassaki-ui/tokens
+# @kawassaki-ui/eslint-config
 
 ## 2.1.0
 
@@ -19,9 +19,3 @@
 - Add changest confi
 
   - oi oi :D
-
-## 1.1.0
-
-### Minor Changes
-
-- Add new test color
