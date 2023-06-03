@@ -1,5 +1,11 @@
 # @kawassaki-ui/tokens
 
+## 2.3.0
+
+### Minor Changes
+
+- add new pink palette
+
 ## 2.2.1
 
 ### Patch Changes
