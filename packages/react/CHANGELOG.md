@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.0.1
+
+### Patch Changes
+
+- Minor fixes
+
 ## 5.0.0
 
 ### Major Changes

@@ -17,6 +17,24 @@ export const TextInputContainer = styled('div', {
         padding: '$3 $4',
       },
     },
+    withError: {
+      true: {
+        border: '2px solid $dangerBase',
+        span: {
+          svg: {
+            color: '$dangerBase',
+          },
+        },
+      },
+      false: {
+        border: '2px solid $gray900',
+        span: {
+          svg: {
+            color: '$gray400',
+          },
+        },
+      },
+    },
   },
 
   '&:has(input:focus)': {

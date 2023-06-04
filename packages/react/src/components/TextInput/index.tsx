@@ -18,11 +18,19 @@ export interface TextInputProps
   size?: ComponentProps<typeof TextInputContainer>['size']
   prefixIconComponent?: ReactElement
   suffixIconComponent?: ReactElement
+  withError?: boolean
 }
 
 export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
   (
-    { prefix, size, prefixIconComponent, suffixIconComponent, ...props },
+    {
+      prefix,
+      size,
+      prefixIconComponent,
+      suffixIconComponent,
+      withError = false,
+      ...props
+    },
     ref,
   ) => {
     const PrefixIcon = () => {
@@ -56,7 +64,7 @@ export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
     }
 
     return (
-      <TextInputContainer size={size}>
+      <TextInputContainer size={size} withError={withError}>
         {!!prefix && <Prefix>{prefix}</Prefix>}
         <PrefixIcon />
         <Input ref={ref} {...props} />

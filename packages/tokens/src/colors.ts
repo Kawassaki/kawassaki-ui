@@ -15,20 +15,40 @@ export const colors = {
   grayTransparency500: '#121214ba',
   grayTransparency900: '#121214f5',
 
-  pink100: '#FCE4EC',
-  pink200: '#F48FB1',
-  pink400: '#EC407A',
-  pink500: '#E91E63',
-  pink600: '#D81B60',
-  pink700: '#C2185B',
-  pink800: '#AD1457',
-  pink900: '#880E4F',
-
   ignite300: '#00B37E',
   ignite500: '#00875F',
   ignite700: '#015F43',
   ignite900: '#00291D',
 
-  test: '#eeee',
-  test2: '#eeeeffff',
+  kawassakiLight: '#996DFF',
+  kawassakiMid: '#8257E5',
+  kawassakiDark: '#633BBC',
+
+  kawassakiLow: '#271A45',
+
+  discoverLight: '#6A80FF',
+  discoverMid: '#4863F7',
+  discoverDark: '#3249CB',
+  discoverLow: '#182049',
+
+  ecLight: '#FC4737',
+  ecMid: '#D73628',
+  ecDark: '#AD1E12',
+  ecLow: '#42110D',
+
+  successLight: '#04D361',
+  successBase: '#1B873F',
+  successLow: '#051B0D',
+
+  dangerLight: '#F75A68',
+  dangerBase: '#CC2937',
+  dangerLow: '#2D090C',
+
+  warningLight: '#FBA94C',
+  warningBase: '#EB8A1D',
+  warningLow: '#2E1B06',
+
+  newLight: '#1EF7D0',
+  newBase: '#07847E',
+  newLow: '#163840',
 }

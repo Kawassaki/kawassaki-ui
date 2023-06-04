@@ -23,7 +23,7 @@ export default {
 
 export const Primary: StoryObj<TextInputProps> = {
   args: {
-    placeholder: 'Type your name',
+    placeholder: 'Type your email',
   },
 }
 
@@ -36,20 +36,29 @@ export const Disabled: StoryObj<TextInputProps> = {
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: 'cal.com/',
-    placeholder: 'your-username',
+    placeholder: 'your-email',
   },
 }
 
 export const WithPrefixIcon: StoryObj<TextInputProps> = {
   args: {
     prefixIconComponent: <MagnifyingGlass />,
-    placeholder: 'your-username',
+    placeholder: 'your-email',
   },
 }
 
 export const WithSuffixIcon: StoryObj<TextInputProps> = {
   args: {
     suffixIconComponent: <Person />,
-    placeholder: 'your-username',
+    placeholder: 'your-email',
+  },
+}
+
+export const WithError: StoryObj<TextInputProps> = {
+  args: {
+    prefixIconComponent: <MagnifyingGlass />,
+    suffixIconComponent: <Person />,
+    placeholder: 'your-email',
+    withError: true,
   },
 }
