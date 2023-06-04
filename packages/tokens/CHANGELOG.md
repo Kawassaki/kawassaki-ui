@@ -1,5 +1,11 @@
 # @kawassaki-ui/tokens
 
+## 2.4.0
+
+### Minor Changes
+
+- Added new transparency gray token and a new Modal component
+
 ## 2.3.0
 
 ### Minor Changes

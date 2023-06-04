@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.0.0
+
+### Major Changes
+
+- Added new transparency gray token and a new Modal component
+
 ## 4.0.0
 
 ### Major Changes

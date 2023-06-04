@@ -11,6 +11,10 @@ export const colors = {
   gray800: '#202024',
   gray900: '#121214',
 
+  grayTransparency200: '#1212144f',
+  grayTransparency500: '#121214ba',
+  grayTransparency900: '#121214f5',
+
   pink100: '#FCE4EC',
   pink200: '#F48FB1',
   pink400: '#EC407A',

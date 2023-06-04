@@ -21,8 +21,10 @@ export const TextInputContainer = styled('div', {
 
   '&:has(input:focus)': {
     borderColor: '$ignite300',
-    svg: {
-      color: '$gray400',
+    span: {
+      svg: {
+        color: '$ignite300',
+      },
     },
   },
 
