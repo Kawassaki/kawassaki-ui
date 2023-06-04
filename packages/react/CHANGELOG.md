@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 4.0.0
+
+### Major Changes
+
+- Added new Selection Field component!
+
 ## 3.1.1
 
 ### Patch Changes

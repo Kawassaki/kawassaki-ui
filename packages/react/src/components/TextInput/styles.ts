@@ -21,6 +21,9 @@ export const TextInputContainer = styled('div', {
 
   '&:has(input:focus)': {
     borderColor: '$ignite300',
+    svg: {
+      color: '$gray400',
+    },
   },
 
   '&:has(input:disabled)': {
@@ -38,6 +41,22 @@ export const Prefix = styled('span', {
   fontSize: '$sm',
   color: '$gray400',
   fontWeight: 'regular',
+})
+
+export const PrefixIconWrapper = styled('span', {
+  fontFamily: '$default',
+  fontSize: '$sm',
+  color: '$gray200',
+  fontWeight: 'regular',
+  marginRight: '$1',
+})
+
+export const SufixIconWrapper = styled('span', {
+  fontFamily: '$default',
+  fontSize: '$sm',
+  color: '$gray200',
+  fontWeight: 'regular',
+  marginRight: '$1',
 })
 
 export const Input = styled('input', {
