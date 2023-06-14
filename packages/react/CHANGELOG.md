@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.0.2
+
+### Patch Changes
+
+- new toens
+
 ## 5.0.1
 
 ### Patch Changes

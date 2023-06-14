@@ -2,7 +2,7 @@ import { styled } from '../../styles'
 
 export const ModalContainer = styled('div', {
   position: 'fixed',
-  zIndex: 1,
+  zIndex: 3,
   left: 0,
   top: 0,
   width: '100%',
@@ -44,7 +44,7 @@ export const ModalContent = styled('div', {
   backgroundColor: '$gray800',
   margin: 'auto',
   padding: '$4',
-  border: '1px solid $ignite300',
+  border: '1px solid $kawassakiMid',
   borderRadius: '$sm',
   height: '100%',
   width: '100%',
@@ -102,7 +102,7 @@ export const ModalHeader = styled('div', {
   alignItems: 'flex-start',
   justifyContent: 'space-between',
   width: '100%',
-  borderBottom: '2px solid $gray400',
+  borderBottom: '2px solid $gray600',
   paddingBottom: '$2',
 })
 
@@ -114,6 +114,6 @@ export const ModalActions = styled('div', {
   gap: '$4',
   width: '100%',
   paddingTop: '$2',
-  borderTop: '2px solid $gray400',
+  borderTop: '2px solid $gray600',
   marginTop: 'auto',
 })

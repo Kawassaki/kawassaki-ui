@@ -20,9 +20,9 @@ export const colors = {
   ignite700: '#015F43',
   ignite900: '#00291D',
 
-  kawassakiLight: '#996DFF',
-  kawassakiMid: '#8257E5',
-  kawassakiDark: '#633BBC',
+  kawassakiMid: '#E190DE',
+  kawassakiDark: '#D750D1',
+  kawassakiLight: '#B300AC',
 
   kawassakiLow: '#271A45',
 

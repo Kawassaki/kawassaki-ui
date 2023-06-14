@@ -32,7 +32,7 @@ export const SelectInput = styled('div', {
   variants: {
     isOpen: {
       true: {
-        border: '2px solid $ignite300',
+        border: '2px solid $kawassakiMid',
         svg: {
           transform: 'rotateZ(180deg)',
         },

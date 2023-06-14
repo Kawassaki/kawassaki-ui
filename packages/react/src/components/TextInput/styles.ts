@@ -38,10 +38,10 @@ export const TextInputContainer = styled('div', {
   },
 
   '&:has(input:focus)': {
-    borderColor: '$ignite300',
+    borderColor: '$kawassakiMid',
     span: {
       svg: {
-        color: '$ignite300',
+        color: '$kawassakiMid',
       },
     },
   },

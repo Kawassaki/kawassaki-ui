@@ -1,5 +1,11 @@
 # @kawassaki-ui/tokens
 
+## 2.4.2
+
+### Patch Changes
+
+- new toens
+
 ## 2.4.1
 
 ### Patch Changes
