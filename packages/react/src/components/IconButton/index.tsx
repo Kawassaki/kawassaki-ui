@@ -6,7 +6,7 @@ export interface IconButtonProps extends ComponentProps<typeof ButtonWithIcon> {
   icon: ReactElement
 }
 
-export function IconButton({ icon, variant }: IconButtonProps) {
+export function IconButton({ icon, variant, ...props }: IconButtonProps) {
   const Icon = () => {
     if (icon) {
       return React.cloneElement(icon, {
@@ -19,7 +19,7 @@ export function IconButton({ icon, variant }: IconButtonProps) {
   }
 
   return (
-    <ButtonWithIcon variant={variant}>
+    <ButtonWithIcon variant={variant} {...props}>
       <Icon />
     </ButtonWithIcon>
   )

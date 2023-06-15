@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.1.1
+
+### Patch Changes
+
+- fix on click action
+
 ## 5.1.0
 
 ### Minor Changes
