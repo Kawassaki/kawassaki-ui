@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.2.2
+
+### Patch Changes
+
+- fix modal actions
+
 ## 5.2.1
 
 ### Patch Changes

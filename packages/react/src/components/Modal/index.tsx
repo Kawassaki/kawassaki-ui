@@ -20,8 +20,8 @@ import { Button } from '../Button'
 
 export interface ModalProps {
   onCloseModal: () => void
-  onCancelClick?: (e: MouseEventReact<HTMLButtonElement>) => void
-  onConfirmClick?: (e: MouseEventReact<HTMLButtonElement>) => void
+  onPrimaryButtonClick?: (e: MouseEventReact<HTMLButtonElement>) => void
+  onSecondaryButtonClick?: (e: MouseEventReact<HTMLButtonElement>) => void
   isModalWithActions?: boolean
   primaryButtonLabel?: string
   secondaryButtonLabel?: string
@@ -35,9 +35,9 @@ export interface ModalProps {
 export const Modal = forwardRef(
   (
     {
-      onCancelClick,
+      onPrimaryButtonClick,
       onCloseModal,
-      onConfirmClick,
+      onSecondaryButtonClick,
       showModal,
       children,
       size,
@@ -83,10 +83,18 @@ export const Modal = forwardRef(
           <ModalChildren>{children}</ModalChildren>
           {isModalWithActions ? (
             <ModalActions>
-              <Button type="button" variant="secondary" onClick={onCancelClick}>
+              <Button
+                type="button"
+                variant="secondary"
+                onClick={onSecondaryButtonClick}
+              >
                 {secondaryButtonLabel || ''}
               </Button>
-              <Button type="submit" variant="primary" onClick={onConfirmClick}>
+              <Button
+                type="submit"
+                variant="primary"
+                onClick={onPrimaryButtonClick}
+              >
                 {primaryButtonLabel || ''}
               </Button>
             </ModalActions>
