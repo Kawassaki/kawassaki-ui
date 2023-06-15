@@ -44,7 +44,6 @@ export const ModalContent = styled('div', {
   backgroundColor: '$gray800',
   margin: 'auto',
   padding: '$4',
-  border: '1px solid $kawassakiMid',
   borderRadius: '$sm',
   height: '100%',
   width: '100%',
@@ -56,7 +55,7 @@ export const ModalContent = styled('div', {
       },
       md: {
         width: 768,
-        height: 554,
+        height: 650,
       },
       lg: {
         width: 1420,

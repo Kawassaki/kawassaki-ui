@@ -23,6 +23,8 @@ export interface ModalProps {
   onCancelClick?: (e: MouseEventReact<HTMLButtonElement>) => void
   onConfirmClick?: (e: MouseEventReact<HTMLButtonElement>) => void
   isModalWithActions?: boolean
+  primaryButtonLabel?: string
+  secondaryButtonLabel?: string
   showModal: boolean
   children: ReactElement
   size: 'sm' | 'md' | 'lg' | 'full'
@@ -42,6 +44,8 @@ export const Modal = forwardRef(
       modalTitle,
       isModalWithActions = false,
       overlay = 'medium',
+      primaryButtonLabel,
+      secondaryButtonLabel,
     }: ModalProps,
     ref: Ref<HTMLDivElement>,
   ) => {
@@ -80,10 +84,10 @@ export const Modal = forwardRef(
           {isModalWithActions ? (
             <ModalActions>
               <Button type="button" variant="secondary" onClick={onCancelClick}>
-                Cancelar
+                {secondaryButtonLabel || ''}
               </Button>
               <Button type="submit" variant="primary" onClick={onConfirmClick}>
-                Continuar
+                {primaryButtonLabel || ''}
               </Button>
             </ModalActions>
           ) : null}
