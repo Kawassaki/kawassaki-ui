@@ -1,6 +1,6 @@
 {
   "name": "@kawassaki-ui/react",
-  "version": "5.0.2",
+  "version": "5.1.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

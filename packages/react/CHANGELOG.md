@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.1.0
+
+### Minor Changes
+
+- new icon button component
+
 ## 5.0.2
 
 ### Patch Changes
