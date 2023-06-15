@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.2.0
+
+### Minor Changes
+
+- New Table Component
+
 ## 5.1.1
 
 ### Patch Changes
