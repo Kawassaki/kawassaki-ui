@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.2.4
+
+### Patch Changes
+
+- New Radio Button Component
+
 ## 5.2.3
 
 ### Patch Changes
