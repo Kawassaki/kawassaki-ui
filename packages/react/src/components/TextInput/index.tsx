@@ -11,6 +11,7 @@ import {
   PrefixIconWrapper,
   TextInputContainer,
 } from './styles'
+import { InputMask } from './maskInput'
 
 export interface TextInputProps
   extends Omit<ComponentProps<typeof Input>, 'size'> {
@@ -19,6 +20,7 @@ export interface TextInputProps
   prefixIconComponent?: ReactElement
   suffixIconComponent?: ReactElement
   withError?: boolean
+  mask?: string
 }
 
 export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
@@ -29,6 +31,7 @@ export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
       prefixIconComponent,
       suffixIconComponent,
       withError = false,
+      mask = '',
       ...props
     },
     ref,
@@ -67,7 +70,11 @@ export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
       <TextInputContainer size={size} withError={withError}>
         {!!prefix && <Prefix>{prefix}</Prefix>}
         <PrefixIcon />
-        <Input ref={ref} {...props} />
+        {!mask ? (
+          <Input ref={ref} {...props} />
+        ) : (
+          <InputMask ref={ref} mask={mask} {...props} />
+        )}
         <SuffixIcon />
       </TextInputContainer>
     )

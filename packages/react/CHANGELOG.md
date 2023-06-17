@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.2.3
+
+### Patch Changes
+
+- Modal update and input mask
+
 ## 5.2.2
 
 ### Patch Changes

@@ -39,6 +39,7 @@ export const ModalSmall: StoryObj<ModalProps> = {
             size="sm"
             modalTitle="Form fields"
             overlay="high"
+            shouldCloseOnOutsideClick={false}
           >
             <Box>
               <Text>Field 1</Text>
@@ -155,14 +156,12 @@ export const ModalFull: StoryObj<ModalProps> = {
             modalTitle="Form fields"
           >
             <Box>
-              <Text>Name</Text>
-              <TextInput placeholder="Name" />
-              <Text>SecondName</Text>
-              <TextInput placeholder="SecondName" />
-              <Text>Email</Text>
-              <TextInput placeholder="Email" />
-              <Text>hehehe</Text>
-              <TextInput placeholder="hehehe" />
+              <Text>Field 1</Text>
+              <TextInput placeholder="Field 1" />
+              <Text>Field 2</Text>
+              <TextInput placeholder="Field 2" />
+              <Text>Field 3</Text>
+              <TextInput placeholder="Field 3" />
             </Box>
           </Modal>
         </Box>
@@ -194,8 +193,8 @@ export const ModalWithActions: StoryObj<ModalProps> = {
             size="sm"
             modalTitle="Form fields"
             isModalWithActions
-            onCancelClick={() => setShowModal(false)}
-            onConfirmClick={() => setShowModal(false)}
+            onPrimaryButtonClick={() => setShowModal(false)}
+            onSecondaryButtonClick={() => setShowModal(false)}
           >
             <Box>
               <Text>Field 1</Text>

@@ -30,6 +30,7 @@ export interface ModalProps {
   size: 'sm' | 'md' | 'lg' | 'full'
   modalTitle: string
   overlay?: 'low' | 'medium' | 'high'
+  shouldCloseOnOutsideClick?: boolean
 }
 
 export const Modal = forwardRef(
@@ -46,6 +47,7 @@ export const Modal = forwardRef(
       overlay = 'medium',
       primaryButtonLabel,
       secondaryButtonLabel,
+      shouldCloseOnOutsideClick = true,
     }: ModalProps,
     ref: Ref<HTMLDivElement>,
   ) => {
@@ -56,11 +58,14 @@ export const Modal = forwardRef(
 
     const handleClickOutside = useCallback(
       ({ target }: MouseEvent) => {
+        if (!shouldCloseOnOutsideClick) {
+          return
+        }
         if (ref && !(ref as any).current.contains(target as Node)) {
           onCloseModal()
         }
       },
-      [ref, onCloseModal],
+      [ref, onCloseModal, shouldCloseOnOutsideClick],
     )
 
     useEffect(() => {

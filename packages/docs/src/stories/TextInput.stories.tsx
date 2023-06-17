@@ -62,3 +62,21 @@ export const WithError: StoryObj<TextInputProps> = {
     withError: true,
   },
 }
+
+export const WithMaskNumber: StoryObj<TextInputProps> = {
+  args: {
+    prefixIconComponent: <MagnifyingGlass />,
+    suffixIconComponent: <Person />,
+    mask: '999.999.999-99',
+    placeholder: '999.999.999-99',
+  },
+}
+
+export const WithMaskDate: StoryObj<TextInputProps> = {
+  args: {
+    prefixIconComponent: <MagnifyingGlass />,
+    suffixIconComponent: <Person />,
+    mask: '99/99/9999',
+    placeholder: 'DD/MM/AAAA',
+  },
+}
