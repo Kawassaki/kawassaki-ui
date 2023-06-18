@@ -46,13 +46,3 @@ export const Checkmark = styled('span', {
     display: 'none',
   },
 })
-// appearance: none;
-// background-color: #fff;
-// margin: 0;
-// font: inherit;
-// color: currentColor;
-// width: 1.15em;
-// height: 1.15em;
-// border: 0.15em solid currentColor;
-// border-radius: 50%;
-// transform: translateY(-0.075em);

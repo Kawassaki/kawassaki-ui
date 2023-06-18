@@ -8,6 +8,8 @@ import {
   ModalHeader,
 } from './styles'
 import {
+  ComponentProps,
+  ElementType,
   MouseEvent as MouseEventReact,
   ReactElement,
   Ref,
@@ -17,8 +19,10 @@ import {
 } from 'react'
 import { Heading } from '../Heading'
 import { Button } from '../Button'
+import { Box } from '../Box'
 
-export interface ModalProps {
+export interface ModalProps extends ComponentProps<typeof Box> {
+  as?: ElementType
   onCloseModal: () => void
   onPrimaryButtonClick?: (e: MouseEventReact<HTMLButtonElement>) => void
   onSecondaryButtonClick?: (e: MouseEventReact<HTMLButtonElement>) => void
