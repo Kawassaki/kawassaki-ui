@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.2.6
+
+### Patch Changes
+
+- Minor fixes on form Modal
+
 ## 5.2.5
 
 ### Patch Changes

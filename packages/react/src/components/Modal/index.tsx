@@ -19,9 +19,8 @@ import {
 } from 'react'
 import { Heading } from '../Heading'
 import { Button } from '../Button'
-import { Box } from '../Box'
 
-export interface ModalProps extends ComponentProps<typeof Box> {
+export interface ModalProps extends ComponentProps<typeof ModalContainer> {
   as?: ElementType
   onCloseModal: () => void
   onPrimaryButtonClick?: (e: MouseEventReact<HTMLButtonElement>) => void
@@ -52,6 +51,7 @@ export const Modal = forwardRef(
       primaryButtonLabel,
       secondaryButtonLabel,
       shouldCloseOnOutsideClick = true,
+      ...props
     }: ModalProps,
     ref: Ref<HTMLDivElement>,
   ) => {
@@ -81,7 +81,7 @@ export const Modal = forwardRef(
     }, [handleClickOutside, ref])
 
     return (
-      <ModalContainer showModal={showModal} overlay={overlay}>
+      <ModalContainer showModal={showModal} overlay={overlay} {...props}>
         <ModalContent size={size} ref={ref}>
           <ModalHeader>
             <Heading>{modalTitle}</Heading>
@@ -99,13 +99,19 @@ export const Modal = forwardRef(
               >
                 {secondaryButtonLabel || ''}
               </Button>
-              <Button
-                type="submit"
-                variant="primary"
-                onClick={onPrimaryButtonClick}
-              >
-                {primaryButtonLabel || ''}
-              </Button>
+              {onPrimaryButtonClick ? (
+                <Button
+                  type="submit"
+                  variant="primary"
+                  onClick={onPrimaryButtonClick}
+                >
+                  {primaryButtonLabel || ''}
+                </Button>
+              ) : (
+                <Button type="submit" variant="primary">
+                  {primaryButtonLabel || ''}
+                </Button>
+              )}
             </ModalActions>
           ) : null}
         </ModalContent>

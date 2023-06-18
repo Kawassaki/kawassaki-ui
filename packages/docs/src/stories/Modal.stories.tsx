@@ -8,7 +8,7 @@ import {
   TextInput,
 } from '@kawassaki-ui/react'
 import { useRef, useState } from 'react'
-// import { useRef } from 'react'
+import { useForm } from 'react-hook-form'
 
 export default {
   title: 'Overlay/Modal',
@@ -170,12 +170,13 @@ export const ModalFull: StoryObj<ModalProps> = {
   ],
 }
 
-export const ModalWithActions: StoryObj<ModalProps> = {
-  args: {},
+export const ModalForm: StoryObj<ModalProps> = {
   decorators: [
     () => {
       const [showModal, setShowModal] = useState(false)
       const ref = useRef<HTMLDivElement | null>(null)
+      const { handleSubmit, register } = useForm()
+
       return (
         <Box
           as="label"
@@ -190,27 +191,32 @@ export const ModalWithActions: StoryObj<ModalProps> = {
             ref={ref}
             showModal={showModal}
             onCloseModal={() => setShowModal(false)}
-            size="sm"
+            size="md"
             modalTitle="Form fields"
             isModalWithActions
-            onPrimaryButtonClick={() => setShowModal(false)}
             onSecondaryButtonClick={() => setShowModal(false)}
+            primaryButtonLabel="Save"
+            secondaryButtonLabel="Cancel"
+            as="form"
+            onSubmit={handleSubmit((data) => {
+              console.log(data)
+            })}
           >
             <Box>
               <Text>Field 1</Text>
-              <TextInput placeholder="Field 1" />
+              <TextInput placeholder="Field 1" {...register('field1')} />
               <Text>Field 2</Text>
-              <TextInput placeholder="Field 2" />
+              <TextInput placeholder="Field 2" {...register('field2')} />
               <Text>Field 3</Text>
-              <TextInput placeholder="Field 3" />
+              <TextInput placeholder="Field 3" {...register('field3')} />
               <Text>Field 4</Text>
-              <TextInput placeholder="Field 4" />
+              <TextInput placeholder="Field 4" {...register('field4')} />
               <Text>Field 5</Text>
-              <TextInput placeholder="Field 5" />
+              <TextInput placeholder="Field 5" {...register('field5')} />
               <Text>Field 6</Text>
-              <TextInput placeholder="Field 6" />
+              <TextInput placeholder="Field 6" {...register('field6')} />
               <Text>Field 7</Text>
-              <TextInput placeholder="Field 7" />
+              <TextInput placeholder="Field 7" {...register('field7')} />
             </Box>
           </Modal>
         </Box>

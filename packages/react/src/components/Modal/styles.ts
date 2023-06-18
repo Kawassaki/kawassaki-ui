@@ -1,6 +1,7 @@
 import { styled } from '../../styles'
+import { Box } from '../Box'
 
-export const ModalContainer = styled('div', {
+export const ModalContainer = styled(Box, {
   position: 'fixed',
   zIndex: 3,
   left: 0,
@@ -8,6 +9,7 @@ export const ModalContainer = styled('div', {
   width: '100%',
   height: '100%',
   overflow: 'auto',
+  margin: '$4',
   variants: {
     showModal: {
       true: {
