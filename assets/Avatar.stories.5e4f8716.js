@@ -1,0 +1,2 @@
+import{A as t}from"./index.25b944ae.js";import"./index.9984dc6f.js";import"./iframe.df80c48e.js";import"./index.27fa3d86.js";import"./jsx-runtime.03b4e863.js";const p={title:"Data display/Avatar",component:t,args:{src:"https://github.com/kawassaki.png",alt:"Felipe Kawassaki"},argTypes:{src:{control:{type:"text"}}}},c={},e={args:{src:void 0}},m=["Primary","WithFallback"];export{c as Primary,e as WithFallback,m as __namedExportsOrder,p as default};
+//# sourceMappingURL=Avatar.stories.5e4f8716.js.map
