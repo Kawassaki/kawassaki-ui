@@ -11,10 +11,14 @@ interface OptionItem {
 export interface SelectProps {
   options: OptionItem[]
   defaultOption?: string
+  onSelectOption?: (option: OptionItem) => void
 }
 
 export const Select = forwardRef(
-  ({ options }: SelectProps, ref: Ref<HTMLDivElement>) => {
+  (
+    { options, defaultOption, onSelectOption, ...props }: SelectProps,
+    ref: Ref<HTMLDivElement>,
+  ) => {
     const [showMenu, setShowMenu] = useState(false)
     const [selectedOption, setSelectedOption] = useState<OptionItem | null>()
 
@@ -23,11 +27,9 @@ export const Select = forwardRef(
     }
 
     function handleSelectOption(item: OptionItem) {
-      if (selectedOption && selectedOption.key === item.key) {
-        setSelectedOption(null)
-      } else {
-        setSelectedOption(item)
-      }
+      setSelectedOption({ ...item })
+      onSelectOption && onSelectOption(item)
+      setShowMenu(!showMenu)
     }
 
     const handleClickOutside = useCallback(
@@ -67,7 +69,9 @@ export const Select = forwardRef(
     return (
       <SelectContainer ref={ref}>
         <SelectInput onClick={handleInputClick} isOpen={showMenu}>
-          <Text> {!selectedOption ? 'Selecione' : selectedOption.value} </Text>
+          <Text>
+            {!selectedOption ? defaultOption || 'Select' : selectedOption.value}
+          </Text>
           <ArrowDown />
         </SelectInput>
         {showMenu ? (

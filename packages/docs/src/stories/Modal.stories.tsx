@@ -4,6 +4,7 @@ import {
   Button,
   Modal,
   ModalProps,
+  Select,
   Text,
   TextInput,
 } from '@kawassaki-ui/react'
@@ -175,7 +176,7 @@ export const ModalForm: StoryObj<ModalProps> = {
     () => {
       const [showModal, setShowModal] = useState(false)
       const ref = useRef<HTMLDivElement | null>(null)
-      const { handleSubmit, register } = useForm()
+      const { handleSubmit, register, setValue } = useForm()
 
       return (
         <Box
@@ -217,6 +218,15 @@ export const ModalForm: StoryObj<ModalProps> = {
               <TextInput placeholder="Field 6" {...register('field6')} />
               <Text>Field 7</Text>
               <TextInput placeholder="Field 7" {...register('field7')} />
+              <Text>Field 8</Text>
+              <Select
+                options={[
+                  { key: '1', value: 'Option 1', selected: false },
+                  { key: '2', value: 'Option 2', selected: false },
+                  { key: '3', value: 'Option 3', selected: false },
+                ]}
+                onSelectOption={(item) => setValue('field8', item)}
+              />
             </Box>
           </Modal>
         </Box>

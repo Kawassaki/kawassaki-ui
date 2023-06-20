@@ -1,5 +1,11 @@
 # @kawassaki-ui/react
 
+## 5.2.7
+
+### Patch Changes
+
+- Fix Select component
+
 ## 5.2.6
 
 ### Patch Changes
